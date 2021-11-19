@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body {
+        font-family: "Comic Sans MS";
+    }
+    td {
+        border-width: 5px;
+        border-style: double;
+        border-color: darkred;
+    }
+</style>
+<body>
+<img style="padding-top:30px" src="W3CjQuery.png"><p>Bài tập jQuery W3C</p>
+<table>
+    <tr>
+        <td>Câu hỏi</td>
+        <td>Trả lời</td>
+    </tr>
+    <tr>
+        <td>jQuery là thư viện dùng ở client hay server?</td>
+        <td>Client</td>
+    </tr>
+    <tr>
+        <td>CDN là gì?</td>
+        <td>CDN là viết tắt của Content Delivery Network, là một hệ thống máy chủ trên toàn cầu (số lượng tùy theo mỗi nhà cung cấp dịch vụ) làm nhiệm vụ lưu bản sao của các nội dung tĩnh bên trong website, sau đó phân tán nó ra nhiều máy chủ khác (được gọi là PoP – Points of Presence) và từ các PoP đó nó sẽ gửi tới cho người dùng khi họ truy cập vào website.</td>
+    </tr>
+    <tr>
+        <td>Đưa ra tên của 3 CDN phổ biến có jQuery</td>
+        <td>
+            <li>CDN của jQuery, do MaxCDN tài trợ: //code.jquery.com/jquery-1.11.3.min.js</li>
+            <li>CDN của Google: https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js</li>
+            <li>CDN của Microsoft: http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js</li>
+        </td>
+    </tr>
+    <tr>
+        <td>Lợi ích của CDN?</td>
+        <td>
+            <li>Tiết kiệm băng thông cho máy chủ gốc</li>
+            <li>Tăng tốc lượt truy cập</li>
+            <li>Tiết kiệm dung lượng</li>
+        </td>
+    </tr>
+    <tr>
+        <td>jQuery có thay thế cho JavaScript được không?</td>
+        <td>jQuery có khả năng thay thế cho JavaScript nhờ việc phải viết ít dòng lệnh hơn, nhưng hoạt động tương tự với JS thuần tuý. Tuy nhiên khi JS đã có thêm những thư viện mới đáp ứng đủ nhu cầu hơn, jQuery đang dần mất vị thế</td>
+    </tr>
+    <tr>
+        <td>jQuery có phải thuộc tiêu chuẩn của W3C không?</td>
+        <td>Không, em làm sai câu này trên W3C nên em biết :v</td>
+    </tr>
+    <tr>
+        <td>Khác biệt giữa $(this) và this là gì?</td>
+        <td>$() là hàm tạo của jQuery, trong khi đó "this" là một tham chiếu đến phần tử DOM từ lệnh gọi. Trong $(this), bạn chỉ truyền thisvào $()dưới dạng tham số để bạn có thể gọi các phương thức và hàm jQuery.</td>
+    </tr>
+    <tr>
+        <td>Khác biệt giữa prop và attr</td>
+        <td>
+            <li>Các attributes được định nghĩa bên trong HTML, trong khi các properties được truy cập từ cây DOM, từ đó nodes là các objects và chúng có properties</li>
+            <li>1 số HTML attributes có quan hệ 1:1 với properties, như là "id" và "value", trong khi những attributes còn lại thì khác, như là attribute "class" và property "className"</li>
+            <li>1 số attributes không có mối quân hệ với properties và ngược lại</li>
+            <li>1 số giá trị attribute thì không tương đương với giá trị property như là , thẻ checked input có thể có attributes checked là "true" , nhưng giá trị property có thể là "false"</li>
+        </td>
+    </tr>
+    <tr>
+        <td>Viết đoạn code thay thế $(document).ready() bằng javascript</td>
+        <td><pre><code>document.addEventListener("DOMContentLoaded", function() {
+            });</code></pre></td>
+    </tr>
+</table>
+</body>
+</html>

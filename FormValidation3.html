@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Form validation: Task 3</title>
+  <style>
+    body {
+      background-color: #fff;
+      color: #333;
+      font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+      padding: 1em;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+<form novalidate>
+  <label for="mail">I would like you to provide me with an e-mail address:</label>
+  <input type="email" id="mail" name="mail" required minLength=10>
+  <span class="error-msg"></span>
+  <button>Submit</button>
+</form>
+</body>
+<script>
+  const email = document.getElementById("mail");
+  const error = document.querySelector("#mail + span.error-msg");
+
+  email.addEventListener("input", function (event) {
+    if (email.validity.valueMissing) {
+      error.textContent = "Email is required";
+    } else if (email.validity.tooShort) {
+      error.textContent = "Email need at least " + email.minLength + " characters!";
+    } else if (email.validity.valid) {
+      error.textContent = "";
+    }
+  });
+
+</script>
+
+</html>
